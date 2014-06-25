@@ -1,2 +1,1 @@
-# 마이 노트
-* 실습용입니다 
+#http://yongdae-kim.github.io/note-test/
