@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="kr">
+<head>
+      <meta charset="utf-8">
+      <title>My note</title>
+      <meta name="description" content="">
+      <meta name="author" content="YongdaeKim">
+    
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    
+      <link rel="stylesheet" href="lib/summernote-bs3.css">
+      <link rel="stylesheet" href="lib/summernote.css">
+      
+      <link rel="stylesheet" href="src/app.css?v=1.0">
+</head>
+
+<body>
+  
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container", id="test">           
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">My note</a>
+            </div>
+              
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="full_screen">Full Screen</a></li>
+                <li><a href="#" id="save">Save</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#aboutModal" id="about">About</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->      
+          </div>
+        </div>
+        
+        <div class="container">
+            <div class="wrap">
+                <select id="listSelect" class="form-control">
+                    <option value="html">Html</option>
+                    <option value="mark-down">Mark-Down</option>
+                </select>
+                <div class="editor"  id="contents"></div>
+            </div>
+        </div>
+        
+        <div class="modal fade " id="aboutModal" tabindex="-1" role="dialog" 
+             aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <h3>DaumTrack MICE-IT</h3>
+                    <div class="modal-body">
+                         <p>학 학기 동안 가르쳐주셔서 감사합니다 ㅋㅋㅋ 용대올림</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn">No</a>
+                        <a href="#" class="btn btn-primary">Yes</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="lib/summernote.min.js"></script>
+<script src="epiceditor/js/epiceditor.min.js"></script>
+<script src="lib/screenfull.min.js"></script>
+<script src="lib/FileSaver.min.js"></script>
+
+<script src="src/html-editor.js"></script>
+<script src="src/app.js"></script>
+<script src="src/markdown-editor.js"></script>
+
+<script src="src/Dialoger.js"></script>
+    
+<script src="src/NewNoteEvent.js"></script>
+<script src="src/FullScreenEvent.js"></script>
+<script src="src/SaveEvent.js"></script>
+
+<script src="src/EditorFactory.js"></script>
+<script src="src/BtnEventFactory.js"></script>
+<script src="src/EditorChanger.js"></script>
+<script src="src/button.js"></script>
+
+</body>
+</html>
